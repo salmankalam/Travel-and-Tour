@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --accent: #ff9a62;
+    --white: #fff;
+    --gray: #f8f8f8;
+}
+
+.heropage{
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: url(img/heroimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    background: transparent;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 40px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgba(42,40,37,.3);
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.headline{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin-top: 132px;
+}
+
+.title{
+    font-size: 80px;
+    font-weight: bolder;
+}
+.description{
+    font-size: 28px;
+}
+
+.callout{
+    width: 300px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.callout:hover{
+    border-radius: 40px;
+    background-color: black;
+}
+
+.upanddown{
+    animation-name: scrolldown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+/* animation for up and down */
+
+@keyframes scrolldown{
+    0%,
+    100%{
+        margin-top: 80px;
+    }
+    50%{
+        margin-top: 90px;
+    }
+}
