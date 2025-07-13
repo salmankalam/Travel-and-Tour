@@ -254,10 +254,10 @@ a:hover{
     margin-bottom: 50px;
 }
 .welcome h1{
-    font-size: 64px;
+    font-size: 50px;
 }
 .welcome-subtext{
-    font-size: 24px;
+    font-size: 20px;
 }
 .welcome span{
     color: var(--accent);
@@ -298,22 +298,111 @@ a:hover{
     display: flex;
     align-items: center;
     text-align: left;
-    margin-top: 60px;
-    gap: 40px;
+    margin-top: 80px;
+    gap: 50px;
 }
 .beyond-travel h1{
-    font-size: 80px;
+    font-size: 64px;
 }
 .beyond-travel h2{
     font-size: 40px;
     font-weight: normal;
 }
 .beyond-travel p{
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 30px;
     text-align: left;
 }
 .beyond-travel img{
-    width: 480px;
+    width: 500px;
     height: 350px;
+}
+
+/* pricing */
+.pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.pricing h1{
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+.price-boxes{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.price-box{
+    width: 320px;
+    height: 500px;
+    padding: 30px;
+    border-radius: 50px;
+    transition: all .5s;
+}
+.price-box:hover{
+    border-radius: 0;
+    padding: 45px;
+}
+.price-box h3{
+    font-size: 32px;
+}
+.price-box h4{
+    font-size: 24px;
+    opacity: .6;
+}
+.price-box hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.basic-description{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.basic-description-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.basic-description-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.basic-description-text{
+    text-align: left;
+    margin-top: 10px;
+    opacity: .8;
+}
+
+.know-more h2{
+    font-size: 32px;
+    margin-top: 40px;
+}
+
+.button-3{
+    width: 280px;
+    height: 70px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--accent);
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+    transition: all .5s;
+    cursor: pointer;
+}
+.button-3:hover{
+    background-color: black;
 }
