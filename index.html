@@ -9,13 +9,16 @@
 </head>
 <body>
     <div class="heropage">
-
         <nav>
+            <input type="checkbox" name="check" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
             <label class="logo">Travel&Tour</label>
-            
             <ul>
                 <li>
-                    <a href="#features">EXPLORE</a>
+                    <a href="#features" onclick="uncheckCheckbox()">EXPLORE</a>
                 </li>
                 <li>
                     <a href="#about">ABOUT</a>
@@ -120,8 +123,8 @@
             </div>
             <div class="welcome-subtext">
                 <p>
-                    At Travel&Tour we believe in the transformative power of travel. <br>
-                    Our mission is to create extraordinary experiences that go <br>
+                    At Travel&Tour we believe in the transformative power of travel.
+                    Our mission is to create extraordinary experiences that go 
                     beyond the ordinary, creating memories that last a lifetime.
                 </p>
             </div>
@@ -140,9 +143,9 @@
                 <h1>Beyond Travel -</h1>
                 <h2><i>It's A Lifestyle</i></h2>
                 <p>
-                    We don't just plan trips, we curate experiences that redefine <br> 
-                    the art of travel. Established with a vision to go beyond <br>
-                    the ordinary, Travel&Tour is more than a travel agency; <br>
+                    We don't just plan trips, we curate experiences that redefine
+                    the art of travel. Established with a vision to go beyond 
+                    the ordinary, Travel&Tour is more than a travel agency; 
                     it's a gateway to a lifestyle of exploration and discovery.
                 </p>
                 <button class="button-2">
@@ -322,5 +325,38 @@
     </div>
 
     <!-- contact -->
+     <div class="contact" id="contact">
+        <h1>REACH NOW</h1>
+        <img src="img/reach-now.png" alt="">
+        <button class="button-4">Contact Us</button>
+     </div>
+
+     <!-- footer -->
+    <div class="footer" id="footer">
+        <div class="footer-socials">
+            <p>Follow Us</p>
+            <p style="opacity: .8;">And keep up to date with Travel&Tour</p>
+            <div class="socials">
+                <a href=""><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href=""><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-info-box">
+                <i class="fa-solid fa-phone fa-lg"></i>
+                <p>1111-2222-3333</p>
+            </div>
+            <div class="contact-info-box">
+                <i class="fa-solid fa-map fa-lg"></i>
+                <p>Sharjah, UAE</p>
+            </div>
+            <div class="contact-info-box">
+                <i class="fa-solid fa-envelope fa-lg"></i>
+                <p>travelandtour@gmail.com</p>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
