@@ -21,13 +21,13 @@
                     <a href="#features" onclick="uncheckCheckbox()">EXPLORE</a>
                 </li>
                 <li>
-                    <a href="#about">ABOUT</a>
+                    <a href="#about" onclick="uncheckCheckbox()">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#pricing">SERVICES</a>
+                    <a href="#pricing" onclick="uncheckCheckbox()">SERVICES</a>
                 </li>
                 <li>
-                    <a href="#contact">CONTACT</a>
+                    <a href="#contact" onclick="uncheckCheckbox()">CONTACT</a>
                 </li>
             </ul>
         </nav>
@@ -177,7 +177,7 @@
                             <p>Accomodation</p>
                         </div>
                         <p class="basic-description-text">
-                            Comfortable and well-reviewed hotels or <br>
+                            Comfortable and well-reviewed hotels or 
                             budget friendly boutique stays.
                         </p>
                     </div>
@@ -249,7 +249,7 @@
                             <p>Activities</p>
                         </div>
                         <p class="basic-description-text">
-                            Curated experiences, exclusive guided tours, <br>and access to 
+                            Curated experiences, exclusive guided tours, and access to 
                             iconic attractions.
                         </p>
                     </div>
@@ -259,7 +259,7 @@
                             <p>Meals</p>
                         </div>
                         <p class="basic-description-text">
-                            Breakfast included, with some lunches or <br>restaurants.
+                            Breakfast included, with some lunches or restaurants.
                         </p>
                     </div>
                 </div>
@@ -289,7 +289,7 @@
                             <p>Transportation</p>
                         </div>
                         <p class="basic-description-text">
-                            First class or private jet options, chauffeur- <br>driven transfers.
+                            First class or private jet options, chauffeur-driven transfers.
                         </p>
                     </div>
 
@@ -299,7 +299,7 @@
                             <p>Activities</p>
                         </div>
                         <p class="basic-description-text">
-                            Private guided tours, VIP access to attractions, <br> 
+                            Private guided tours, VIP access to attractions,
                             and bespoke experiences.
                         </p>
                     </div>
@@ -309,7 +309,7 @@
                             <p>Meals</p>
                         </div>
                         <p class="basic-description-text">
-                            Gourmet dining experiences, including fine <br>
+                            Gourmet dining experiences, including fine 
                             dining and unique culinary events.
                         </p>
                     </div>
@@ -358,5 +358,11 @@
         </div>
 
     </div>
+
+    <script>
+        function uncheckCheckbox(){
+            document.getElementById("check").checked = false;
+        }
+    </script>
 </body>
 </html>

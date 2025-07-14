@@ -26,21 +26,21 @@ nav{
 
 label.logo{
     color: white;
-    font-size: 35px;
+    font-size: 32px;
     line-height: 80px;
-    padding: 0 100px;
+    padding: 0 80px;
     font-weight: bold;
 }
 
 nav ul{
     float: right;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 nav ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 10px;
+    margin: 0 6px;
 }
 
 nav ul li a{
@@ -482,7 +482,7 @@ a:hover{
     }
     label.logo{
         font-size: 30px;
-        padding-left: 50px;
+        padding-left: 40px;
     }
     nav ul li a{
         font-size: 16px;
@@ -630,5 +630,218 @@ a:hover{
         flex-direction: column;
         align-items: self-start;
         gap: 20px;
+    }
+}
+
+/* for tablets */
+@media (min-width: 587px) and (max-width: 768px) {
+    .checkbtn{
+        display: block;
+    }
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        background-color: #222529;
+        padding-left: 0;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .description{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .features h2{
+        font-size: 32px;
+    }
+    .destinations h1{
+        font-size: 32px;
+    }
+    .boxes{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box{
+        width: 250px;
+        padding: 30px;
+    }
+    .box:nth-child(3){
+        width: 300px;
+    }
+    .image-boxes{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .image-box{
+        width: 300px;
+        height: 300px;
+    }
+    .image-box:nth-child(3){
+        width: 620px;
+        height: 280px;
+    }
+    .overlap{
+        width: 300px;
+    }
+    .overlap-3{
+        width: 620px;
+    }
+    .overlap-text{
+        top: 200px;
+    }
+    .welcome{
+        flex-direction: column;
+        align-items: center;
+        margin-top: -30px;
+    }
+    .welcome h1{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .welcome-subtext{
+        font-size: 14px;
+        text-align: center;
+        padding: 0px 20px 0px 20px;
+    }
+    .slide-photo img{
+        width: 160px;
+    }
+    .beyond-travel{
+        flex-direction: column;
+    }
+    .beyond-travel-text{
+        text-align: center;
+    }
+    .beyond-travel-text h1{
+        font-size: 40px;
+        margin-top: -60px;
+    }
+    .beyond-travel-text h2{
+        font-size: 24px;
+        font-weight: normal;
+    }
+    .beyond-travel-text p{
+        font-size: 14px;
+        text-align: center;
+        padding: 0px 20px;
+        margin-top: 12px;
+    }
+    .beyond-travel .button-2{
+        position: relative;
+        left: 0;
+        margin-top: 12px;
+    }
+    .beyond-travel img{
+        position: relative;
+        width: 90%;
+        height: 60%;
+    }
+    .pricing h1{
+        font-size: 32px;
+    }
+    .pricing p{
+        font-size: 14px;
+    }
+    .price-boxes{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .price-box{
+        width: 240px;
+        /* padding: 20px; */
+    }
+    .price-box:hover{
+        padding: 25px;
+    }
+    .price-box:nth-child(3){
+        width: 320px;
+    }
+    .price-box h3{
+        font-size: 24px;
+    }
+    .price-box h4{
+        font-size: 16px;
+        opacity: .6;
+    }
+    .contact h1{
+        font-size: 50px;
+    }
+    .contact img{
+        width: 450px;
+        height: 250px;
+    }
+    .know-more h2{
+        font-size: 40px;
+    }
+    .button-4{
+        width: 300px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: self-start;
+        gap: 20px;
+    }
+}
+
+/* for laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .boxes{
+        flex-direction: row;
+    }
+    .box{
+        width: 240px;
+    }
+    .image-boxes{
+        flex-direction: row;
+    }
+    .image-box{
+        width: 300px;
+    }
+    .welcome{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .slide-photo img{
+        width: 220px;
+    }
+    .beyond-travel{
+        flex-direction: column;
+        text-align: center;
+    }
+    .beyond-travel-text p{
+        text-align: center;
+    }
+    .price-boxes{
+        flex-direction: row;
+    }
+    .price-box{
+        width: 240px;
+        height: 600px;
     }
 }
